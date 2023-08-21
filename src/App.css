@@ -1,0 +1,259 @@
+html{
+  background-image: linear-gradient(to right, rgb(20, 182, 133) , rgb(140, 221, 153) );
+}
+.name{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.signature{
+  padding-left: 3%;
+  width: 8%;
+  height: 8%;
+
+}
+.description{
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+.aboutContact{
+  text-align: center;
+}
+button{
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  width: 200;
+  cursor: grab;
+  color: black;
+  background: rgb(255, 255, 255);
+}
+
+button:hover{
+  /*box-shadow: 0 5px #666;*/
+  transform: translateY(-1px);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+  
+.Image{
+
+  margin-left: 40%;
+}
+
+img.head{
+  height: 35%;
+  width: 35%;
+  border-radius: 50%;
+}
+img.linkedin{
+  height: 2%;
+  width: 2%;
+  margin-left: 48.5%;
+  margin-bottom: 1%;
+}
+img.github{
+  height: 2%;
+  margin-left: .5%;
+  width: 2%;
+  margin-bottom: 1%;
+}
+
+img.github:hover{
+  transform: translateY(-2px);
+
+}
+
+img.linkedin:hover{
+  transform: translateY(-2px);
+
+}
+
+
+
+
+
+
+/* Work Experience Popup*/
+
+/* Position of the Popup */
+.popup-box {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+/* Height, Color, Border of the Popup */
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background-image: linear-gradient(to right, rgb(20, 90, 131) , rgb(122, 150, 168) );
+  border: 8px solid rgb(0, 0, 0);
+  padding: 2%;
+  overflow: auto;
+}
+
+/*Close 'X' Icon of Work Experience Popup */
+.close-icon {
+  content: 'X';
+  cursor: grab;
+  position: fixed;
+  right: calc(12%);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+/*"Work Experience" Header Text */
+.individual_job{
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  display: table;
+  border-radius: 14px;
+}
+.workExp{
+  color: White;
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 252, 252);
+}
+
+.job_company_name{
+  margin-left: 2%;
+  float: left;
+  color: black;
+  width: 48%;
+}
+
+.job_start_date{
+  float: right;
+  width: 30%;
+}
+
+.job_bullet_points{
+ display: inline-block;
+ color: black;
+ height: 50%;
+}
+.job_text_information{
+  float: right;
+  width: 80%;
+}
+.logo_image{
+  width: 19%;
+  height: 19%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+
+
+
+/*Cell Phone Size */
+@media (max-width: 600px){
+
+
+
+  .box {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background-image: linear-gradient(to right, rgb(20, 90, 131) , rgb(122, 150, 168) );
+    border: 8px solid rgb(0, 0, 0);
+    padding: 2%;
+    overflow: auto;
+  }
+
+  .close-icon {
+    content: 'X';
+    cursor: grab;
+    position: fixed;
+    right: calc(0.5%);
+    top: calc(100vh - 85vh - 33px);
+    background: #ededed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .job_text_information{
+    float: left;
+    width: 100%;
+    font-size: small;
+  }
+  .logo_image{
+    width: 60%;
+    height: 20%;
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+
+
+  .job_start_date{
+    float: right;
+    width: 30%;
+    font-size: small;
+  }
+
+
+  .Image{
+    padding-top: 10%;
+    margin-left: 28%;
+  }
+  
+  img.head{
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+  }
+
+  img.linkedin{
+    height: 10%;
+    width: 10%;
+    margin-left: 42%;
+  }
+  img.github{
+    height: 10%;
+    width: 10%;
+  }
+
+  .signature{
+    padding-left: 3%;
+    width: 18%;
+    height: 18%;
+  
+  }
+
+}
+
+
+
+
+
+
+
